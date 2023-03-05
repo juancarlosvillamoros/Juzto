@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230305 08:35:59.265" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230305 08:47:36.179" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="c:\Users\LENOVO\Documents\Juzto\Robocorp - Courses\my-rsb-robot\tasks.robot">
 <test id="s1-t1" name="Insert the sales data for the week and export it as a PDF." line="6">
 <kw name="Open the intranet website">
@@ -8,32 +8,159 @@
 <doc>Attempts to open a browser on the user's device from a set of
 supported browsers. Automatically downloads a corresponding webdriver
 if none is already installed.</doc>
-<msg timestamp="20230305 08:36:00.723" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230305 08:36:00.730" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20230305 08:36:03.877" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230305 08:36:05.043" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
-<msg timestamp="20230305 08:36:05.043" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+<msg timestamp="20230305 08:47:37.369" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 08:47:37.393" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230305 08:47:40.524" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 08:47:41.651" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230305 08:47:41.651" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
-<msg timestamp="20230305 08:36:05.043" level="INFO">Opening url 'https://robotsparebinindustries.com/'</msg>
-<status status="PASS" starttime="20230305 08:36:00.723" endtime="20230305 08:36:05.845"/>
+<msg timestamp="20230305 08:47:41.651" level="INFO">Opening url 'https://robotsparebinindustries.com/'</msg>
+<status status="PASS" starttime="20230305 08:47:37.369" endtime="20230305 08:47:41.907"/>
 </kw>
-<status status="PASS" starttime="20230305 08:36:00.723" endtime="20230305 08:36:05.845"/>
+<status status="PASS" starttime="20230305 08:47:37.369" endtime="20230305 08:47:41.907"/>
 </kw>
-<status status="PASS" starttime="20230305 08:36:00.722" endtime="20230305 08:36:05.845"/>
+<kw name="Log in">
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>username</arg>
+<arg>maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230305 08:47:41.915" level="INFO">Typing text 'maria' into text field 'username'.</msg>
+<msg timestamp="20230305 08:47:41.923" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002B37D3]
+	(No symbol) [0x00248B81]
+	(No symbol) [0x0014B36D]
+	(No symbol) [0x0012E5DA]
+	(No symbol) [0x0019F0CB]
+	(No symbol) [0x001B0A56]
+	(No symbol) [0x0019B216]
+	(No symbol) [0x00170D97]
+	(No symbol) [0x0017253D]
+	GetHandleVerifier [0x0052ABF2+2510930]
+	GetHandleVerifier [0x00558EC1+2700065]
+	GetHandleVerifier [0x0055C86C+2714828]
+	GetHandleVerifier [0x00363480+645344]
+	(No symbol) [0x00250FD2]
+	(No symbol) [0x00256C68]
+	(No symbol) [0x00256D4B]
+	(No symbol) [0x00260D6B]
+	BaseThreadInitThunk [0x76B200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x770D7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x770D7B8E+238]
+	(No symbol) [0x00000000]
+</msg>
+<msg timestamp="20230305 08:47:41.931" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002B37D3]
+	(No symbol) [0x00248B81]
+	(No symbol) [0x0014B36D]
+	(No symbol) [0x0012E5DA]
+	(No symbol) [0x0019F0CB]
+	(No symbol) [0x001B0A56]
+	(No symbol) [0x0019B216]
+	(No symbol) [0x00170D97]
+	(No symbol) [0x0017253D]
+	GetHandleVerifier [0x0052ABF2+2510930]
+	GetHandleVerifier [0x00558EC1+2700065]
+	GetHandleVerifier [0x0055C86C+2714828]
+	GetHandleVerifier [0x00363480+645344]
+	(No symbol) [0x00250FD2]
+	(No symbol) [0x00256C68]
+	(No symbol) [0x00256D4B]
+	(No symbol) [0x00260D6B]
+	BaseThreadInitThunk [0x76B200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x770D7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x770D7B8E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20230305 08:47:41.915" endtime="20230305 08:47:41.939"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>password</arg>
+<arg>thoushallnotpass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230305 08:47:41.939" endtime="20230305 08:47:41.939"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230305 08:47:41.939" endtime="20230305 08:47:41.939"/>
+</kw>
+<status status="FAIL" starttime="20230305 08:47:41.907" endtime="20230305 08:47:41.939"/>
+</kw>
+<status status="FAIL" starttime="20230305 08:47:37.369" endtime="20230305 08:47:41.947">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002B37D3]
+	(No symbol) [0x00248B81]
+	(No symbol) [0x0014B36D]
+	(No symbol) [0x0012E5DA]
+	(No symbol) [0x0019F0CB]
+	(No symbol) [0x001B0A56]
+	(No symbol) [0x0019B216]
+	(No symbol) [0x00170D97]
+	(No symbol) [0x0017253D]
+	GetHandleVerifier [0x0052ABF2+2510930]
+	GetHandleVerifier [0x00558EC1+2700065]
+	GetHandleVerifier [0x0055C86C+2714828]
+	GetHandleVerifier [0x00363480+645344]
+	(No symbol) [0x00250FD2]
+	(No symbol) [0x00256C68]
+	(No symbol) [0x00256D4B]
+	(No symbol) [0x00260D6B]
+	BaseThreadInitThunk [0x76B200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x770D7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x770D7B8E+238]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <doc>Insert the sales data for the week and export it as a PDF.</doc>
-<status status="PASS" starttime="20230305 08:35:59.283" endtime="20230305 08:36:05.853"/>
+<status status="FAIL" starttime="20230305 08:47:36.187" endtime="20230305 08:47:41.955"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tasks</stat>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230305 08:47:41.923" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002B37D3]
+	(No symbol) [0x00248B81]
+	(No symbol) [0x0014B36D]
+	(No symbol) [0x0012E5DA]
+	(No symbol) [0x0019F0CB]
+	(No symbol) [0x001B0A56]
+	(No symbol) [0x0019B216]
+	(No symbol) [0x00170D97]
+	(No symbol) [0x0017253D]
+	GetHandleVerifier [0x0052ABF2+2510930]
+	GetHandleVerifier [0x00558EC1+2700065]
+	GetHandleVerifier [0x0055C86C+2714828]
+	GetHandleVerifier [0x00363480+645344]
+	(No symbol) [0x00250FD2]
+	(No symbol) [0x00256C68]
+	(No symbol) [0x00256D4B]
+	(No symbol) [0x00260D6B]
+	BaseThreadInitThunk [0x76B200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x770D7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x770D7B8E+238]
+	(No symbol) [0x00000000]
+</msg>
 </errors>
 </robot>
