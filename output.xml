@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230305 08:35:59.265" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\LENOVO\Documents\Juzto\Robocorp - Courses\my-rsb-robot\tasks.robot">
+<test id="s1-t1" name="Insert the sales data for the week and export it as a PDF." line="6">
+<kw name="Open the intranet website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230305 08:36:00.723" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 08:36:00.730" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230305 08:36:03.877" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 08:36:05.043" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230305 08:36:05.043" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230305 08:36:05.043" level="INFO">Opening url 'https://robotsparebinindustries.com/'</msg>
+<status status="PASS" starttime="20230305 08:36:00.723" endtime="20230305 08:36:05.845"/>
+</kw>
+<status status="PASS" starttime="20230305 08:36:00.723" endtime="20230305 08:36:05.845"/>
+</kw>
+<status status="PASS" starttime="20230305 08:36:00.722" endtime="20230305 08:36:05.845"/>
+</test>
+<doc>Insert the sales data for the week and export it as a PDF.</doc>
+<status status="PASS" starttime="20230305 08:35:59.283" endtime="20230305 08:36:05.853"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
